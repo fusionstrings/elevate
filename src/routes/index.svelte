@@ -1,46 +1,43 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+  import Hero from "../components/hero.svelte";
+  import Features from "../components/features.svelte";
+  import Informations from "../components/informations.svelte";
+  import Stats from "../components/stats.svelte";
+  import Plans from "../components/plans.svelte";
+  import Testimonials from "../components/testimonials.svelte";
+  import Callback from "../components/callback.svelte";
+  import Subscription from "../components/subscription.svelte";
+  import Footer from "../components/footer.svelte";
+  import ButtonGotoTop from "../components/button-goto-top.svelte";
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
+  function onClick() {
+    console.log("event");
+  }
+</script>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Elevate</title>
 </svelte:head>
+<Hero
+  heading="The perfect template to present your awesome product."
+  subheading="Introducing Elevate"
+  actions={[{ label: 'Features', href: 'features' }, { label: 'Download', onClick: onClick }]}>
 
-<h1>Great success!</h1>
+  <img src="images/app-screenshot-big.jpg" alt="" class="animate-intro" />
+</Hero>
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
+<Features />
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<Informations />
+
+<Stats />
+
+<Plans />
+
+<Testimonials />
+
+<Callback />
+
+<Subscription />
+<Footer />
+<ButtonGotoTop />
