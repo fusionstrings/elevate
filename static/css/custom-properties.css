@@ -1,0 +1,59 @@
+:root {
+	--color-darkest: #000;
+	--color-lightest: #fff;
+	--text-color-lead: #4a5060;
+	--text-color-abbr: #3f4452;
+	--base-font-size: 10px;
+	--font-family-arial: 'arial', sans-serif;
+	--font-family-georgia: 'georgia', sans-serif;
+	--font-family-domine: 'Domine', serif;
+	--font-family-roboto: 'Roboto', sans-serif;
+	--font-weight-light: 300;
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+	--font-weight-black: 900;
+
+	--text-color-body: #292c35;
+	--background-color-body: #0e0e0e;
+	--font-family-body: var(--font-family-roboto);
+	--font-weight-body: var(--font-weight-regular);
+
+	--text-color-link: #ed254d;
+	--text-color-link-alt: var(--color-darkest);
+
+	--font-family-heading: var(--font-family-roboto);
+	--font-weight-heading: var(--font-weight-black);
+	--text-color-heading: #001835;
+
+	--font-family-blockquote-quote: var(--font-family-arial);
+	--font-family-blockquote: var(--font-family-georgia);
+	--text-color-blockquote-cite-link: var(--text-color-heading);
+
+	--font-family-code: Consolas, 'Andale Mono', Courier, 'Courier New',
+		monospace;
+	--background-color-code: #f1f1f1;
+	--border-color-code: #e1e1e1;
+
+	--background-color-mark: #fff49b;
+	--text-color-mark: var(--color-darkest);
+
+	--border-color-hr: #2b3641;
+	--list-bullet-color: var(--text-color-link);
+
+	--text-color-dt: var(--list-bullet-color);
+
+	--font-family-table: var(--font-family-roboto);
+	--border-color-table: #e8e8e8;
+
+	--background-color-loader: var(--color-lightest);
+
+	--font-family-input: var(--font-family-roboto);
+	--background-color-input: rgba(0, 0, 0, 0.2);
+	--text-color-input: rgba(0, 0, 0, 0.7);
+
+	--font-family-heading-hero: var(--font-family-domine);
+	--text-color-heading-hero: var(--text-color-link);
+
+	--text-color-subheading-hero: rgba(255, 255, 255, 0.8);
+}
