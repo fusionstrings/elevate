@@ -2,6 +2,14 @@
   "name": "@fusionstrings/elevate",
   "description": "Svelte port of Elevate Theme",
   "version": "0.1.0",
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "svelte": "index.mjs",
+  "files": [
+    "src/components",
+    "static/css",
+    "index.mjs"
+  ],
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
