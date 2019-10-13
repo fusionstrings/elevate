@@ -1,3 +1,11 @@
 export { default as Button } from './src/components/button.svelte';
 export { default as ButtonToGo } from './src/components/button-goto-top.svelte';
+export { default as Header } from './src/components/header.svelte';
 export { default as Hero } from './src/components/hero.svelte';
+export { default as Logo } from './src/components/logo.svelte';
+export { default as Nav } from './src/components/nav.svelte';
+export { default as Features } from './src/components/features.svelte';
+export { default as Lead } from './src/components/lead.svelte';
+export { default as SectionLead } from './src/components/section-lead.svelte';
+export { default as FeatureBlock } from './src/components/feature-block.svelte';
+export { default as FeatureList } from './src/components/feature-list.svelte';

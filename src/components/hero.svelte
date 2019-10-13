@@ -148,12 +148,13 @@
 		{/if}
 		{#if actions}
 			<div class="actions">
-				{#each actions as { label, href, onClick }, i}
+				{#each actions as { label, href, onClick }}
 					<Button invert {href} {onClick}>{label}</Button>
 				{/each}
 			</div>
 		{/if}
+		<slot name="subheading" />
+		<slot name="heading" />
 		<slot />
-
 	</Content>
 </section>
