@@ -40,7 +40,7 @@
 
   #subscribe #mc-form .button:hover,
   #subscribe #mc-form .button:focus {
-    background: #f9da4f;
+    background: var(--brand-color);
   }
 
   #subscribe #mc-form label {

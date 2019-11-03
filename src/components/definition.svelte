@@ -1,62 +1,66 @@
+<script>
+	export let lining = false;
+	export let dictionary = false;
+</script>
+
 <style>
+	:global(dt) {
+		margin: 0;
+		color: var(--text-color-dt);
+	}
 
-:global(dt) {
-	margin: 0;
-	color: var(--text-color-dt);
-}
-
-dd {
-	margin: 0 0 0 2rem;
-}
-/**
+	:global(dd) {
+		margin: 0 0 0 2rem;
+	}
+	/**
  * line definition style
  */
-.lining dt,
-.lining dd {
-	display: inline;
-	margin: 0;
-}
+	:global(.lining dt, .lining dd) {
+		display: inline;
+		margin: 0;
+	}
 
-.lining dt + dt:before,
-.lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
-}
+	:global(.lining dt + dt:before, .lining dd + dt:before) {
+		content: '\A';
+		white-space: pre;
+	}
 
-.lining dd + dd:before {
-	content: ", ";
-}
+	:global(.lining dd + dd:before) {
+		content: ', ';
+	}
 
-.lining dd + dd:before {
-	content: ", ";
-}
+	:global(.lining dd + dd:before) {
+		content: ', ';
+	}
 
-.lining dd:before {
-	content: ": ";
-	margin-left: -0.2em;
-}
+	:global(.lining dd:before) {
+		content: ': ';
+		margin-left: -0.2em;
+	}
 
-/**
+	/**
  * dictionary definition style
  */
-.dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
-}
+	:global(.dictionary dt) {
+		display: inline;
+		counter-reset: definitions;
+	}
 
-.dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2em;
-}
+	:global(.dictionary dt + dt:before) {
+		content: ', ';
+		margin-left: -0.2em;
+	}
 
-.dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
-}
+	:global(.dictionary dd) {
+		display: block;
+		counter-increment: definitions;
+	}
 
-.dictionary-style dd:before {
-	content: counter(definitions, decimal) ". ";
-}
-
-
+	:global(.dictionary dd:before) {
+		content: counter(definitions, decimal) '. ';
+	}
 </style>
+
+<dl class:lining class:dictionary>
+	<slot />
+</dl>

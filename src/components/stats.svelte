@@ -39,7 +39,7 @@
 
 #stats .icon-part i {
 	font-size: 6rem;
-	color: #f9da4f;
+	color: var(--brand-color);
 }
 
 #stats .stat-count {

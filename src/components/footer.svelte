@@ -22,7 +22,7 @@
   footer a:hover,
   footer a:focus,
   footer a:active {
-    color: #f9da4f;
+    color: var(--brand-color);
     outline: 0;
   }
 
@@ -53,7 +53,7 @@
   .footer-social-list li a:hover,
   .footer-social-list li a:focus,
   .footer-social-list li a:active {
-    color: #f9da4f;
+    color: var(--brand-color);
   }
 
   .footer-social-list li:first-child a {
