@@ -21,6 +21,7 @@
 		text-align: center;
 		padding-top: 15.6rem;
 		overflow: hidden;
+		top: calc(var(--header-height) * -1);
 	}
 	.actions {
 		margin-bottom: 4.2rem;

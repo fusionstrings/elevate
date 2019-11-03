@@ -3,6 +3,7 @@
 	import SectionLead from './section-lead.svelte';
 	import FeatureBlock from './feature-block.svelte';
 	import Content from './content.svelte';
+	export let id = '';
 </script>
 
 <style>
@@ -12,7 +13,7 @@
  * ------------------------------------------------------------------- */
 	.features {
 		padding: 15rem 0 12rem;
-		background-color: #f9da4f;
+		background-color: var(--brand-color);
 		overflow: hidden;
 	}
 
@@ -29,7 +30,7 @@
 
 <!-- features
    	================================================== -->
-<section class="features">
+<section id={id} class="features">
 	<Content>
 		<slot name="section-lead" />
 		<slot />

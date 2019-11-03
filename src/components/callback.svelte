@@ -52,7 +52,7 @@
 
   #download .button:hover,
   #download .button:focus {
-    background: #f9da4f;
+    background: var(--brand-color);
   }
 
   /* ------------------------------------------------------------------- 

@@ -12,8 +12,8 @@
   }
   .button-outlined:hover,
   .button-outlined:focus {
-    border: 3px solid #f9da4f;
-    color: #f9da4f;
+    border: 3px solid var(--brand-color);
+    color: var(--brand-color);
     background: transparent;
   }
 </style>

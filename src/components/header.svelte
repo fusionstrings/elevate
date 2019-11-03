@@ -3,13 +3,14 @@
  * 09. header styles - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+	:global(body){
+		--header-height: 72px;
+	}
 	header {
-		width: 100%;
-		height: 72px;
-		position: fixed;
-		left: 0;
-		top: 0;
+		height: var(--header-height);
 		z-index: 700;
+		position: sticky;
+		top: 0px;
 		background: transparent;
 	}
 	/* ------------------------------------------------------------------- 
