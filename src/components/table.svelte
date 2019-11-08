@@ -1,5 +1,7 @@
 <script>
-	export let responsive;
+	export let responsive = true;
+	export let compact = false;
+	export let width = '100%';
 </script>
 
 <style>
@@ -28,18 +30,38 @@
 		line-height: 1.5;
 	}
 
-	:global(th:first-child, td:first-child) {
+	:global(th:first-child, td:first-child, .compact table th:first-child, .compact table td:first-child) {
 		padding-left: 0;
 	}
 
-	:global(th:last-child, td:last-child) {
+	:global(th:last-child, td:last-child, .compact table th:last-child, .compact table td:last-child) {
 		padding-right: 0;
 	}
 
-	:global(.table-responsive) {
+	:global(.responsive) {
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
 	}
+	.compact{
+		overflow: hidden;
+		overflow-y: auto;
+		font-size: 1.2rem;
+	}
+	:global(.compact table th){
+		padding: 0.5rem;
+	}
+	:global(.compact table td){
+		line-height: 0.2;
+		padding: 1rem 0.5rem;
+		border-bottom: 1px solid rgb(232, 232, 232, 0.25);
+	}
+	:global(td.right){
+		text-align: right;
+	}
 </style>
 
-<table class:responsive />
+<div class:responsive class:compact>
+	<table width={width}>
+		<slot />
+	</table>
+</div>
