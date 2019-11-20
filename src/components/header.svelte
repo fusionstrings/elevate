@@ -14,6 +14,7 @@
 		background: transparent;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 	/* ------------------------------------------------------------------- 
  * responsive:
@@ -28,6 +29,6 @@
 
 <header class="main-header">
 	<slot name="logo" />
-	<slot name="nav" />
 	<slot />
+	<slot name="nav" />
 </header>

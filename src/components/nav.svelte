@@ -17,7 +17,6 @@
 		display: block;
 		outline: 0;
 		background: #111111;
-		margin-top: 20px;
 		margin-right: 20px;
 		transition: transform 0.4s ease-in-out;
 		transform: translateZ(0);
