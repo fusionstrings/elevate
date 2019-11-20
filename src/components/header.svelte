@@ -12,6 +12,8 @@
 		position: sticky;
 		top: 0px;
 		background: transparent;
+		display: flex;
+		justify-content: space-between;
 	}
 	/* ------------------------------------------------------------------- 
  * responsive:

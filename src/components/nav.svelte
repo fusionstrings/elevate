@@ -17,9 +17,8 @@
 		display: block;
 		outline: 0;
 		background: #111111;
-		position: absolute;
-		top: 20px;
-		right: 20px;
+		margin-top: 20px;
+		margin-right: 20px;
 		transition: transform 0.4s ease-in-out;
 		transform: translateZ(0);
 		-webkit-transform: translateZ(0);
@@ -180,12 +179,7 @@
 			<ul class="nav-list">
 				{#each navList as { href, label, title, activePath }}
 					<li>
-						<a
-							class={segment === href || segment === activePath ? 'selected' : ''}
-							{href}
-							{title}>
-							{label}
-						</a>
+						<a {href} {title}>{label}</a>
 					</li>
 				{/each}
 			</ul>

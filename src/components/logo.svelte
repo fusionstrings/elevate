@@ -7,9 +7,8 @@
  * header logo - (_layout.css) 
  * ------------------------------------------------------------------- */
 	.logo {
-		position: absolute;
-		left: 26px;
-		top: 30px;
+		margin-left: 26px;
+		margin-top: 30px;
 	}
 
 	.logo a {
