@@ -16,6 +16,11 @@
 		background-color: var(--brand-color);
 		overflow: hidden;
 	}
+	:global(.features h1, .features h2, .features h3, .features h4, .features
+			h5, .features h6, .features .h01, .features .h02, .features
+			.h03, .features .h04, .features .h05, .features .h06) {
+		color: var(--text-color-heading);
+	}
 
 	/* ------------------------------------------------------------------- 
  * responsive:
@@ -30,7 +35,7 @@
 
 <!-- features
    	================================================== -->
-<section id={id} class="features">
+<section {id} class="features">
 	<Content>
 		<slot name="section-lead" />
 		<slot />
