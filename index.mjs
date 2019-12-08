@@ -9,3 +9,4 @@ export { default as Lead } from './src/components/lead.svelte';
 export { default as SectionLead } from './src/components/section-lead.svelte';
 export { default as FeatureBlock } from './src/components/feature-block.svelte';
 export { default as FeatureList } from './src/components/feature-list.svelte';
+export { default as Table } from './src/components/table.svelte';

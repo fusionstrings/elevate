@@ -3,7 +3,7 @@
  * 13. infos - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
-  #infos {
+  .infos {
     background: #ffffff;
   }
 
@@ -123,7 +123,7 @@
   }
 
   @media only screen and (max-width: 900px) {
-    #infos {
+    .infos {
       padding-top: 4.2rem;
       padding-bottom: 3rem;
     }
@@ -208,7 +208,7 @@
 
 <!-- infos
    	================================================== -->
-<section id="infos">
+<section class="infos">
   <div class="info-entry">
     <div class="half-grey" />
 
