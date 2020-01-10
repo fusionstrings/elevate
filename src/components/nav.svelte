@@ -176,9 +176,9 @@
 			<h3>Navigation</h3>
 
 			<ul class="nav-list">
-				{#each navList as { href, label, title, activePath }}
+				{#each navList as { href, label, title, activePath, rel }}
 					<li>
-						<a {href} {title}>{label}</a>
+						<a {href} {title} {rel}>{label}</a>
 					</li>
 				{/each}
 			</ul>
