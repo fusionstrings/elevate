@@ -12,7 +12,9 @@
 		position: sticky;
 		top: 0px;
 		background: transparent;
-		display: flex;
+		display: grid;
+		grid-template-columns: auto 1fr auto auto;
+		grid-gap: 20px;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -30,5 +32,6 @@
 <header class="main-header">
 	<slot name="logo" />
 	<slot />
+	<slot name='alert' />
 	<slot name="nav" />
 </header>
