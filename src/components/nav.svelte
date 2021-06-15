@@ -178,7 +178,7 @@
 			<ul class="nav-list">
 				{#each navList as { href, label, title, activePath, rel }}
 					<li>
-						<a {href} {title} {rel}>{label}</a>
+						<a {href} {title} {rel} class:selected='{segment === href}'>{label}</a>
 					</li>
 				{/each}
 			</ul>
